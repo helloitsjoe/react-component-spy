@@ -1,0 +1,37 @@
+{
+  "name": "react-component-spy",
+  "version": "1.0.0",
+  "description": "Spy on React Component props",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helloitsjoe/react-component-spy.git"
+  },
+  "keywords": [
+    "jest",
+    "react",
+    "spyon",
+    "shallow",
+    "props"
+  ],
+  "author": "Joe Boyle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helloitsjoe/react-component-spy/issues"
+  },
+  "homepage": "https://github.com/helloitsjoe/react-component-spy#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@testing-library/react": "^9.3.0",
+    "jest": "^24.9.0",
+    "jest-simple-config": "^0.2.4",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  }
+}
