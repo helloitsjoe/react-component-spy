@@ -17,6 +17,11 @@
     "shallow",
     "props"
   ],
+  "husky": {
+    "hooks": {
+      "pre-push": "npm t"
+    }
+  },
   "author": "Joe Boyle",
   "license": "ISC",
   "bugs": {
@@ -29,6 +34,7 @@
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
     "@testing-library/react": "^9.3.0",
+    "husky": "^3.0.9",
     "jest": "^24.9.0",
     "jest-simple-config": "^0.2.4",
     "react": "^16.11.0",
