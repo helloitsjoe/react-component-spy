@@ -1,6 +1,9 @@
 import React from 'react';
 
 export function getProps(ComponentSpy, indexOrPropToFind = 0) {
+  if (typeof ComponentSpy.mock === 'undefined') {
+    throw new Error('Mock not found - Did you mock the component?');
+  }
   if (typeof indexOrPropToFind === 'number') {
     const [props] = ComponentSpy.mock.calls[indexOrPropToFind];
     return props;
