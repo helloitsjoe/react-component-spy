@@ -45,6 +45,7 @@ const TestClass = () => (
     <ClassComponent greeting="Aloha" />
   </div>
 );
+const NonMockedComponent = () => 'Should throw';
 
 afterEach(() => {
   cleanup();
@@ -69,6 +70,12 @@ describe('getProps', () => {
     const secondProps = getProps(DefaultComponent, { 'data-testid': 'second' });
     expect(firstProps.greeting).toBe('Hey');
     expect(secondProps.greeting).toBe('Hiya');
+  });
+
+  it('throws error if component was not mocked', () => {
+    expect(() => getProps(NonMockedComponent)).toThrow(
+      'Mock not found - Did you mock the component?'
+    );
   });
 
   it('throws error if no component found to match selector', () => {
